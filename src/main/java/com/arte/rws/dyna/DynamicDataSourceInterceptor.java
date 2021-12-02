@@ -41,7 +41,6 @@ public class DynamicDataSourceInterceptor implements Interceptor {
                 if (ms.getId().contains(SelectKeyGenerator.SELECT_KEY_SUFFIX)) {
                     lookupKey = DynamicDataSourceHolder.DB_MASTER;
                 } else {
-
                     if (sql.matches(REGEX)) {
                         lookupKey = DynamicDataSourceHolder.DB_MASTER;
                     } else {
